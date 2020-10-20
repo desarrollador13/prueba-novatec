@@ -3,10 +3,14 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { DetalleOfertaComponent } from './componentes/detalle-oferta/detalle-oferta.component';
+import { BusquedaOfertaComponent } from './componentes/busqueda-oferta/busqueda-oferta.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DetalleOfertaComponent,
+    BusquedaOfertaComponent
   ],
   imports: [
     BrowserModule,

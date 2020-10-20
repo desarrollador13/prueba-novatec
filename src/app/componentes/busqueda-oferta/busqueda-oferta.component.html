@@ -1,0 +1,55 @@
+<div 
+class="card"
+style="padding: 23px; box-shadow: 2px 26px 46px 0 rgba(0,0,0,.3);">
+	<!-- style="height: 449px   !important;" -->
+	<!-- class="col-xs-12 col-sm-12 example-col card" -->
+	<form id="">
+		<div class="row">
+
+			<div class="col-xs-12 col-sm-6">
+				<div class="row">
+					<div class="col-xs-12 col-sm-10">
+						<select 
+				    	name="select" 
+				    	class="form-control mt-2" 
+				    	required>
+				      <option 
+				      	value="oferta_1" 
+				      	selected>Oferta 1
+				      </option>
+				      <!-- <option *ngFor="let ofertasList of ofertas; let i=index"> {{ ofertas[i].id }}</option> -->
+				      <!-- let item of dataForm | keyvalue -->
+				    </select>
+					</div>
+				</div>
+		  </div>
+
+		  <div class="col-xs-12 col-sm-6">
+		  	<div class="row">
+					<div class="col-xs-12 col-sm-10">
+				    <select 
+				    	name="select" 
+				    	class="form-control mt-2" 
+				    	(change)="dataSeleccionada($event.target.value)"
+				    	required>
+				      <option value="" selected>Sin Selección</option>
+				      <option 
+				      	*ngFor="let ofertasList of dataChild; let i=index"
+				      > {{ dataChild[i].id }}</option>
+				    </select>
+
+				    <select 
+				    	name="select" 
+				    	class="form-control mt-2" 
+				    	(change)="dataSeleccionadas($event.target.value)"
+				    	required>
+				      <option value="valorName" selected>{{valorName}}</option>
+				    <!--   <option *ngFor="let ofertasList of dataChild; let i=index">{{ dataChild[i].versions[0].name }}</option> -->
+				    </select>
+				  </div>
+				</div>
+		  </div>
+	  </div>
+	</form>
+
+</div>

@@ -1,0 +1,55 @@
+<p 
+	style="font-size: 18px;
+         font-weight: 600;">
+  Detalle Ofertas Novatec!
+ </p>
+<div>
+
+	<div class="row">
+		<div 
+		class="col-xs-12 col-sm-6">
+			<div 
+				class="row">
+				<div 
+					class="col-xs-12 col-sm-10">
+					<table 
+						class="table table-bordered"
+					>
+				    <thead>
+				      <tr>
+				        <th>Caracteristicas</th>
+				      </tr>
+				    </thead>
+				    <tbody>
+				      <tr *ngFor="let ofertasList of dataCaracterName; let i=index">
+				      	<th> {{ dataCaracterName[i].versions[0].name }} </th>
+				      </tr>
+				    </tbody>
+				  </table>
+				</div>
+			</div>
+		</div>
+<!-- 	</div>
+	<div class="row"> -->
+		<div class="col-xs-12 col-sm-6">
+			<div class="row">
+				<div class="col-xs-12 col-sm-10">
+					<table class="table table-bordered">
+				    <thead>
+				      <tr>
+				        <th>Nombre Precio</th>
+				        <th>Monto</th>
+				      </tr>
+				    </thead>
+				    <tbody>
+				      <tr *ngFor="let ofertasList of dataCaracter; let x=index">
+				      	<th> {{ dataprecios[x].versions[0].name }} </th>
+				      	<th> {{ dataprecios[x].versions[0].price.amount }} </th>
+				      </tr>
+				    </tbody>
+				  </table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
